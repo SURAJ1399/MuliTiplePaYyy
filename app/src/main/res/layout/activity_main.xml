@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="391dp"
+        android:layout_height="93dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="102dp"
+        android:src="@drawable/multiple" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="135dp"
+        android:layout_height="110dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="120dp"
+        android:layout_marginRight="120dp"
+        android:layout_marginBottom="13dp"
+        android:src="@drawable/ellipse" />
+
+    <ImageView
+        android:id="@+id/pay"
+        android:layout_width="96dp"
+        android:layout_height="72dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="125dp"
+        android:layout_marginLeft="125dp"
+        android:layout_marginBottom="35dp"
+        android:src="@drawable/pay" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="307dp"
+        android:layout_height="64dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="288dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:src="@drawable/upi" />
+
+    <ImageView
+        android:id="@+id/df"
+        android:layout_width="307dp"
+        android:layout_height="64dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="198dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginRight="46dp"
+        android:src="@drawable/upi" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="307dp"
+        android:layout_height="64dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="392dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginRight="42dp"
+        android:src="@drawable/upi" />
+
+    <include
+        android:id="@+id/main_toolbar"
+        layout="@layout/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="240dp"
+        android:layout_height="109dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="87dp"
+        android:layout_marginLeft="87dp"
+        android:layout_marginTop="33dp"
+        android:src="@drawable/welcome" />
+
+    <EditText
+        android:id="@+id/upi"
+        android:layout_width="223dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView3"
+        android:layout_alignLeft="@+id/imageView3"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="289dp"
+        android:ems="10"
+        android:hint="Receiver's (UPI)"
+
+        android:textColorHint="#181616"
+        android:textSize="23dp" />
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView3"
+        android:layout_alignLeft="@+id/imageView3"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="400dp"
+        android:ems="10"
+        android:hint="Amount "
+
+        android:inputType="textPersonName"
+        android:textColorHint="#181616"
+        android:textSize="23dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="59dp"
+        android:layout_height="48dp"
+
+
+        android:layout_alignStart="@+id/df"
+        android:layout_alignLeft="@+id/df"
+        android:layout_alignBottom="@+id/sender"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginBottom="-89dp"
+        android:src="@drawable/user" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="79dp"
+        android:layout_height="53dp"
+        android:layout_alignStart="@+id/imageView7"
+        android:layout_alignLeft="@+id/imageView7"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-9dp"
+        android:layout_marginLeft="-9dp"
+        android:layout_marginBottom="169dp"
+        android:src="@drawable/money" />
+
+    <EditText
+        android:id="@+id/sender"
+        android:layout_width="221dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView3"
+        android:layout_alignLeft="@+id/imageView3"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="205dp"
+        android:ems="10"
+        android:hint="Senders' Name"
+        android:inputType="textPersonName"
+        android:textColorHint="#181616"
+        android:textSize="23dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="50dp"
+        android:layout_height="47dp"
+        android:layout_alignStart="@+id/imageView8"
+        android:layout_alignTop="@+id/sender"
+        app:srcCompat="@drawable/iconfinder_icons_user2_1564535" />
+
+</RelativeLayout>
